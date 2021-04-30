@@ -1,0 +1,8 @@
+Atuação junto à equipe de desenvolvimento de software, visando atender às necessidades do time e dos clientes em produção.
+Boa análise de estórias de usuário.
+Apoio a equipe na tomada de decisões e promoção da auto-organização do time de desenvolvimento.
+Participação e contribuição para a definição dos requisitos em nossas reuniões de planejamento de sprint (metodologia ágil – SCRUM).
+Conhecimentos em teste de software aceitação, compatibilidade, regressão, funcionais( Teste e carga, conectividade).
+Manutenção dos ciclos do sistema com homologações após nos ambientes de testes.
+Gestão e planejamento de testes WEB e automação e performance e planejamento de testes e execução de testes.
+Análise de requisitos.
