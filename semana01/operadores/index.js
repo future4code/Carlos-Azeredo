@@ -80,7 +80,7 @@ console.log('o resto da divisão', primeiro % 2)
     c ) Resto =0 
     d ) ele traz o resto da divisão
 *?
-
+fim 2
 
 
 /*3. Faça um programa que pergunte ao usuário sua idade em anos. Depois, imprima no console 
