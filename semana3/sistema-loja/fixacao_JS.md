@@ -8,3 +8,21 @@ const salarioFinal = salarioFixo + bonus +porcentagemDosCarros
   return salarioFinal
 }
 console.log(salarioFinal)
+
+
+
+
+Fixação dia 19/05
+
+
+functionCalculaPrecoTotal(quantidade){
+let precoFinal1 = 1.30 * quantidade
+let precoFinal2 = 1.00 * quantidade
+if(quantidade < 12){
+return precoFinal1
+
+}else{
+  return precoFinal2
+}
+
+}
