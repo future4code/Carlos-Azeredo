@@ -77,6 +77,7 @@ div img {
     background-color: #2274a5;
     color: white;
     text-align: inherit ;
+    padding-top: 70px;
 }
 
 p {
@@ -161,4 +162,9 @@ button:active{
     background-color: blue;
     color: red;
     cursor:pointer
+}
+
+div>input {
+    border:none;
+   border-bottom: solid 1px
 }
