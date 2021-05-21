@@ -1,0 +1,65 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+  }
+
+  ul {
+    display: table ;
+    margin: 4%
+    }
+    
+
+
+  h1{
+    color: green;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    }
+p{
+    background: linear-gradient(151deg, #1659c4 0%, #3d53a2 18%, rgba(54, 31, 184, 0.7) 53%, rgba(31, 185, 196, 0.7) 100%);
+    margin-top: 30px;
+}
+
+td{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.div-Call{
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.div-funcinario{
+    color: white;
+}
+
+.center {
+    margin: 20%;
+    background: rgb(55, 0, 255);
+    width: 2%;
+  }
+
+  .tamanho-icones{
+    max-width: 20px;
+    right: 50%;
+
+  }
+
+  .comBordaComplexa 
+     {background:white;border:none solid gray}
+  
+.margem{ color: violet;
+    padding: 20px;
+    border: 10px solid blue ;
+    margin: 550px solid ;
+}
+
+
+.cabeçalho{
+display: table;
+width: 40%;
+}
