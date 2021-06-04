@@ -29,6 +29,7 @@ class App extends React.Component {
           fotoPost={'https://picsum.photos/200/148'}
         />
       </MainContainer>
+      
     );
   }
 }
