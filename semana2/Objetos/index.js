@@ -14,7 +14,7 @@ Resposta: Matheus Nachtergaele
 Resposta: 
 A) {nome: "Juca", idade: 3, raca: "SRD"}
 {nome: "Juba", idade: 3, raca: "SRD"}
-{nome: "Jubo", idade: 3, raca: "SRD"}
+{nome: "Jubo", idade: 3, raca: "SRD"
 
 B) A sintaxe ...  realiza uma cópia inteira de um objeto para outro onde se pode mudar (ou adicionar), se
 quisermos, apenas uma ou outra propriedade.
@@ -24,10 +24,15 @@ quisermos, apenas uma ou outra propriedade.
 
 /*------------------Exercícios de escrita de código --------------------------------
 
+
+
 // --- EXERCÍCIO 1------------------------------------------------------------------
 //Crie um objeto. Ele deve conter duas propriedades: nome (string) e apelidos (um array que sempre terá exatamente três 
 // apelidos). 
 //Depois, escreva uma função que recebe como entrada um objeto e imprime uma mensagem no modelo abaixo: 
+
+// a)
+
 
 // a)
 
@@ -40,10 +45,16 @@ function funcExercicio1(objeto){
 }    
     funcExercicio1(pessoa)
 
+
 // (b)
 
 const novaPessoa = { ...pessoa, apelidos: ["Amands", "Mandis", "AMANDA"] };
 
+funcExercicio1(novaPessoa);
+
+
+// (b)
+const novaPessoa = { ...pessoa, apelidos: ["Amands", "Mandis", "AMANDA"] };
 funcExercicio1(novaPessoa);
 
 */
@@ -153,3 +164,7 @@ Desafios
 
 // console.log(inverteDisponibilidade(abacaxi))
 // console.log(inverteDisponibilidade(inverteDisponibilidade(abacaxi)))
+
+
+
+

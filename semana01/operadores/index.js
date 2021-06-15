@@ -119,8 +119,21 @@ console.log('O primeiro é igual ao segundo', primeiro == segundo)
 console.log('O primeiro é divisível pelo segundo',divisao)
 console.log('O segundo é divisível pelo primeiro',divisao) */
 
-
-
-
-
-
+const consultas = [
+  { nome: "João", dataDaConsulta: "01/10/2021" },
+  { nome: "Pedro", dataDaConsulta: "02/07/2021" },
+  { nome: "Paula", dataDaConsulta: "03/11/2021" },
+  { nome: "Márcia",  dataDaConsulta: "04/05/2021" }
+]
+function ordenaPorNome() {
+  for(let i = 0; i < consultasNome.length; i++) {
+    for(let j = 0; j < consultasNome.length - i - 1; j++) {
+      if(consultasNome[j].nome > consultasNome[j + 1].nome) {
+        const temp = consultasNome[j]
+        consultasNome[j] = consultasNome[j + 1]
+        consultasNome[j + 1] = temp
+      }
+    }
+  }
+  return consultasNome
+}
