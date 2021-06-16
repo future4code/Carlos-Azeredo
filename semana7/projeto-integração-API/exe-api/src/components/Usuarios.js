@@ -20,6 +20,7 @@ export default class Usuarios extends React.Component{
         trocaTela:false
     }
 
+    
     onClickTroca=()=>{
         this.setState({trocaTela:!this.state.trocaTela})
     }
