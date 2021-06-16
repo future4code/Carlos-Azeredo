@@ -5,12 +5,16 @@ import Usuarios from './components/Usuarios'
 
 const Container=styled.div`
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
   margin-top: 5%;
   margin-right: 40%;
   margin-left: 40%;
+  padding:80px;
+ width:400px
+    
 `
 
 
@@ -47,21 +51,24 @@ this.setState({inputName: event.target.value})
     console.log(resposta.data)
     this.setState({arrayNomes:resposta.data})
   })
-  .catch((err)=>{
-    
+  .catch((erro)=>{
+    alert("Ocorreu um erro , tente novamente!")
   })
 }
 
 criarUsuario=()=>{
+  console.log(this.state)
   const body={
    name:this.state.inputName,
     email:this.state.inputEmail
   }
   axios.post(url,body,headers)
-  .then(()=>{
-    alert("playlist cadastrada com sucesso")
+  .then(()=> {
+   
     this.setState({inputName:""})
+    this.setState({inputEmail:""})
     this.pegarUsuario()
+    alert ("cadastro realizado com sucesso")
   })
   .catch((err)=>{
     console.log(err.response.data)
@@ -72,7 +79,7 @@ onClickTroca=()=>{
 }
   render() {
    
-    
+    console.log(this.state.arrayNomes)
 
     return(
       <div>
@@ -80,11 +87,12 @@ onClickTroca=()=>{
      
         <Container>
 
-        <label>Nome</label>
-        <input value={this.state.inputName} onChange={this.onChangeNome}/> 
-        <label >E-mail</label>
-        <input value={this.state.inputEmail} onChange={this.onChangeEmail} /> 
-        <button onClick={this.criarUsuario}>Salvar</button>
+       
+        <input placeholder={"nome"} value={this.state.inputName} onChange={this.onChangeName}/> 
+        
+        <input placeholder={"E-mail"} value={this.state.inputEmail} onChange={this.onChangeEmail} /> 
+       
+       <button onClick={this.criarUsuario}>Salvar</button>
       </Container>
       
       </div>

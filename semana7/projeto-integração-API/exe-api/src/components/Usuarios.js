@@ -1,10 +1,17 @@
+import axios from 'axios'
 import React from 'react'
 import styled from 'styled-components'
 import App from '../App'
 const Dividir = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    align-items:center;
     margin-top: 8%;
+    border:1px solid black;
+    padding:10px;
+    margin:10px;
+    width:500px;
+    justify-content:space-between;
 `
 const Borda=styled.div`
     border: 1px solid black;
@@ -12,7 +19,7 @@ const Borda=styled.div`
 const url="https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/:id"
 const headers = {
     headers:{
-      Authorization: "matheus-pimentel-molina"
+      Authorization: "carlos-azeredo-molina"
     }
   }
 export default class Usuarios extends React.Component{
@@ -20,26 +27,39 @@ export default class Usuarios extends React.Component{
         trocaTela:false
     }
 
-    
+
     onClickTroca=()=>{
         this.setState({trocaTela:!this.state.trocaTela})
     }
-    excluirUsuario=()=>{
-        const iden= this.props.arrayNomes.map((nome)=>{
-            return nome.id
+    
+    
+    excluirUsuario= (id) => {
+        const url = `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`
+        axios.delete(url, {
+            headers: {
+                Authorization: "carlos-azeredo-molina"
+            }
         })
-         
-        
-       console.log(iden,"id")
-      }
-      
+        .then((resposta) => {
+            alert("Usuário(a) deletado(a) com sucesso!")
+            //const iden =this.props.arrayNomes.map((nome)) =>{
+               this.pegarUser()
+         })
+        .catch((err) => {
+           // const iden =this.props.arrayNomes.map((nome)) =>{
+           // console.log(err.response.data)
+            alert("Ocorreu um erro, tente novamente")
+        })
+     } 
+
+       
 render(){
-    this.excluirUsuario()
+   
     const componentesArray = this.props.arrayNomes.map((nome)=>{
         return (
             <Dividir>
             <li key={nome.id}>{nome.name}</li>
-            <button>Deletar</button>
+            <button onClick={() => this.excluirUsuario(nome.id)}>Deletar</button>
             </Dividir>
           
           )
