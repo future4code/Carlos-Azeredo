@@ -1,5 +1,15 @@
 import React from "react";
 import axios from "axios";
+import styled from "styled-components";
+import Header from './components/Header';
+import PlayListCreationForm from "./components/PlaylistCreationForm";
+import PlayListManagerPage from "./components/PlayListManagerPage";
+
+
+const AppContainer = styled.div`
+display:flex;
+flex-direction:column;
+`
 
 const url =
   "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists";
@@ -58,7 +68,13 @@ export default class App extends React.Component {
 
  
     return (
-      <div>
+     
+      <AppContainer>
+     <Header />
+     <PlayListCreationForm />
+     <PlayListManagerPage />
+     
+        <div>
         <h1>Lista de Playlists</h1>
         <input
           value={this.state.inputPlaylist}
@@ -66,7 +82,9 @@ export default class App extends React.Component {
         />
         <button onClick={this.criarPlaylist}>Enviar</button>
         {componentesPlaylist}
-      </div>
+        </div>
+      </AppContainer>
+   
     );
   }
 }
