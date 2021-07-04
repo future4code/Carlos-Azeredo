@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect ,useState } from 'react'
 import MatchListItem from './MatchListItem';
 import styled from 'styled-components';
+import axios from 'axios';
 
 const LisContainer = styled.div`
 padding: 8px;
@@ -8,15 +9,15 @@ padding: 8px;
 
 
 function MatchListPage() {
-const matches =  [
-    {
-      "id": "71gMbZs2txS9LDvGK5Ew",
-      "age": 26,
-      "name": "Brooke Lynn Hytes",
-      "photo": "https://vignette.wikia.nocookie.net/logosrupaulsdragrace/images/0/03/Brooke_Lynn_Hytes.jpg/revision/latest?cb=20190124191352",
-      "bio": "Amo cachorros e sair para dançar. Procuro alguém animado e sem neuras."
-    }
-  ]
+  const [matches, setMatches] = useState([])
+
+
+  useEffect (() =>{
+    axios.get('https://us-central1-missao-newton.cloudfunctions.net/astroMatch/carlos-azeredo-molina/matches').then(response =>{
+      console.log(response.data.matches)
+      setMatches(response.data.matches)
+    })
+  }, []);
 
     return (
         <LisContainer>

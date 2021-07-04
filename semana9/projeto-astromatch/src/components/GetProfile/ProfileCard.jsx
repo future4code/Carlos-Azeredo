@@ -7,11 +7,17 @@ border: 1px solid black;
 `
 const ProfilePicture = styled.img`
 width: 100%;
-display:block;
-max-width: 310px;
+display:flex;
+max-width: 370px;
 ` 
+
 const ProfileInfo = styled.div `
 padding: 0 16px;
+text-align: center;
+font-size: 20px;
+background: -webkit-linear-gradient(#060606,#2ef5d0);
+-webkit-background-clip: text;
+-webkit-text-fill-color: #00000029;
 `
 
 
