@@ -1,14 +1,11 @@
 import React from 'react'
+import {MainContainer} from './styled'
 
-function TripDetailsPage() {
-    return (
-        <div>
-            TripDetailsPage
-
-        </div>
-    )
+export default function  TripDetailsPage(){
+return (
+    <MainContainer>
+        TripDetailsPage
+        <button>Voltar</button>
+    </MainContainer>
+)
 }
-
-
-
-export default TripDetailsPage;
