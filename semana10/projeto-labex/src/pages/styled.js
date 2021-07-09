@@ -8,6 +8,13 @@ background-repeat: no-repeat;
 background-position: top center ;
 background-size: cover;
 `
+const MainContainerHomePage = styled.div`
+height: 100vh;
+background-image: url("teste.jpg");
+background-repeat: no-repeat;
+background-position: top center ;
+background-size: cover;
+`
 const LogoDiv = styled.div`
 display:flex;
 flex-direction: row;
@@ -94,6 +101,7 @@ margin: auto;
 margin-top: 3px;
 `
 export {
+    MainContainerHomePage,
     MainContainer,
     LogoDiv,
     Logo,

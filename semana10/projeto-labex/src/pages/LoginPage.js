@@ -6,7 +6,8 @@ import { MainContainer, InputsContainer, StyledInputs, ButtonDiv, InfoDiv, Style
 export default function LoginPage() {
      const [email, setEmail] = useState("")
      const [password, setPassword] = useState("")
-    
+     const history = useHistory()
+     
     const onChangeEmail = (event) => {
         setEmail(event.target.value)
     }
@@ -32,7 +33,7 @@ export default function LoginPage() {
 
 
 
-     const history = useHistory()
+ 
 
     const goBack = () => {
         history.goBack()
