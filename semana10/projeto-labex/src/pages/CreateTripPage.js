@@ -2,13 +2,22 @@ import styled from 'styled-components'
 import {useHistory} from 'react-router-dom'
 import { useState } from 'react'
 import axios from 'axios'
+import {StyledButton, ButtonsDiv, StyledInput, StyledSelect } from './styled'
 
-const Appl = styled.div`
+
+const MainContainerHomePage = styled.div`
+background-image: url("https://image.shutterstock.com/z/stock-photo-earth-in-the-space-blue-planet-for-wallpaper-green-planet-or-globe-on-galaxy-elements-of-this-1718232061.jpg");
 display:flex;
-flex-direction:column;`
-const Botoes = styled.div`
-display: flex;`
+flex-direction:column;
+background-repeat: no-repeat;
+background-position: top center ;
+background-size: cover;`
 
+
+const Title = styled.h1`
+margin:auto;
+color:white;
+`
 
 
 function CreateTripPage() {
@@ -34,10 +43,6 @@ function handleDuracao(event){
   setDuracao(event.target.value)
 }
 
-
-
-
-
   const history = useHistory()
   function createTrip(){
     const body = {
@@ -57,39 +62,39 @@ function handleDuracao(event){
     axios.post('https://us-central1-labenu-apis.cloudfunctions.net/labeX/carlos-azeredo-molina/trips',body,{
     headers: header}).then((res)=>{
       alert('viagem criada com sucesso, codigo: '+res.status)
-    history.push('new')
+    history.push('/AdminHomePage')
   }
     ).catch((err) => console.log(err))
   }
   function voltar(){
-  history.push('/admin')
+  history.push("/AdminHomePage")
   }
     return (
-      <Appl>
-        <h1>Criar Viagem</h1>
-        
-        <input placeholder='Nome'
-        value={nome} name='' onChange={handleNome} ></input>
+      <MainContainerHomePage>
+        <Title> Criar Viagem</Title>
+      
+        <StyledInput placeholder='Nome'
+        value={nome} name='' onChange={handleNome} ></StyledInput>
 
-        <select placeholder='Escolha o planeta' value={planeta} name='' onChange={handlePlaneta}>
+        <StyledSelect placeholder='Escolha o planeta' value={planeta} name='' onChange={handlePlaneta}>
         <option value='1' disabled>Escolha o planeta</option>       
     
-        <option>Venus</option>
+        <option>Plutão</option>
         <option>Lua</option>
-        <option>Europa</option>
+        <option>Venus</option>
         <option>Jupter</option>
        <option>Marte</option>    
 
-</select>
-<input type='date' value={data} name='' onChange={handleData} placeholder='mm/dd/yyy' ></input>
-<input value={descricao} name='' onChange={handleDescricao} placeholder='descricao' ></input>
-<input value={duracao} name='duration' type="number" onChange={handleDuracao} placeholder='duracao em dias' ></input>
+</StyledSelect>
+<StyledInput type='date' value={data} name='' onChange={handleData} placeholder='mm/dd/yyy' ></StyledInput>
+<StyledInput value={descricao} name='' onChange={handleDescricao} placeholder='descricao' ></StyledInput>
+<StyledInput value={duracao} name='duration' type="number" onChange={handleDuracao} placeholder='duracao em dias' ></StyledInput>
+<ButtonsDiv>
+  <StyledButton> <button onClick={voltar}>Voltar</button></StyledButton>
+  <StyledButton> <button onClick={createTrip} >Criar</button></StyledButton>
+  </ButtonsDiv>
 
-  <Botoes> <button onClick={voltar}>Voltar</button>
-      <button onClick={createTrip} >Criar</button>
-      </Botoes>
-
-      </Appl>
+      </MainContainerHomePage>
     );
   }
   

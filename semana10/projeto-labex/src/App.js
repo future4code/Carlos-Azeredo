@@ -1,24 +1,22 @@
 import React from 'react'
-import AdminHomePage from './pages/AdminHomePage'
-import ApplicationFormPage from './pages/ApplicationFormPage'
-import CreateTripPage from './pages/CreateTripPage'
-import HomePage from './pages/HomePage'
-import ListTripsPage from './pages/ListTripsPage'
-import LoginPage from './pages/LoginPage'
-import TripDetailsPage from './pages/TripDetailsPage'
+import {createGlobalStyle} from 'styled-components'
+import { Router } from './route/Router'
+
 
 function App() {
+
+  const GlobalStyle = createGlobalStyle`
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }`
   return (
     <div >
-      
-      <AdminHomePage/>
-      <ApplicationFormPage/>
-      <CreateTripPage/>
-      <HomePage/>
-      <ListTripsPage/>
-      <LoginPage/>
-      <TripDetailsPage/>
-      
+         <GlobalStyle/>
+      <Router/>
+ 
     </div>
   );
 }

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 
 const MainContainer = styled.div`
+background-image: url("https://image.shutterstock.com/z/stock-photo-earth-in-the-space-blue-planet-for-wallpaper-green-planet-or-globe-on-galaxy-elements-of-this-1718232061.jpg");
 height: 100vh;
 background-image: url("teste.jpg");
 background-repeat: no-repeat;
@@ -10,7 +11,7 @@ background-size: cover;
 `
 const MainContainerHomePage = styled.div`
 height: 100vh;
-background-image: url("teste.jpg");
+background-image: url("https://image.shutterstock.com/z/stock-photo-earth-in-the-space-blue-planet-for-wallpaper-green-planet-or-globe-on-galaxy-elements-of-this-1718232061.jpg");
 background-repeat: no-repeat;
 background-position: top center ;
 background-size: cover;
@@ -31,14 +32,18 @@ justify-content: space-between;
 margin: 30px;
 `
 const StyledButton = styled.button`
+
+grid-column-start: 2;
+grid-row-start: 3;
+border-radius: 8px;
 font-size: 1rem;
 border:none;
 cursor: pointer;
 border: 1px solid ${props => props.color};
 border-bottom: 50%;
-width: 50px;
-height:50px;
-padding: 0.5rem; 
+width: 100px;
+height:40px;
+padding: 0.35rem; 
 :hover{
     transform: scale(1.2);
     transition: all 0.5s;
@@ -99,6 +104,9 @@ display: flex;
 justify-content: space-between;
 margin: auto;
 margin-top: 3px;
+grid-column-start: 2;
+grid-row-start: 3;
+border-radius: 8px;
 `
 export {
     MainContainerHomePage,
