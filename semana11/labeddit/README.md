@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+LABEDDIT
+Link para o site criado por meio do surge: https://labeedit-carlos-azeredo.surge.sh/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DESCRIÇÃO
 
-## Available Scripts
+Projeto em React criado para uma atividade do curso de programação da Labenu com o intuito de ser uma simulação de uma rede social similar ao Reddit, chamada Labeddit. 
 
-In the project directory, you can run:
+Foi utilizada a seguinte API:
 
-### `yarn start`
+https://documenter.getpostman.com/view/9133542/TzeZG78H#intro
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Segue uma descrição das páginas e de suas funcionalidades:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Login
+Inicialmente, o usuário é conduzido a uma página de login, no qual será possível acessar as páginas principais da aplicação por meio do preenchimento de dois campos de input (um referente ao email e outro, à senha), ambos dentro de um formulário que será enviado ao clicar em um botão FAZER LOGIN ou na tecla Enter.
 
-### `yarn test`
+LOGIN: permite efetuar o login e acessar as páginas protegidas do site, caso o formulário da página seja preenchido. Se o usuário já tiver um cadastro na API, o botão irá direcioná-lo à página de Feed.  
+CADASTRE-SE: direcionará o usuário à página de cadastro.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Cadastro
+Permite ao usuário realizar um cadastro na API de modo que possa acessar as páginas protegidas. Tal cadastro exigirá o preenchimento de um formulário com os seguintes campos e regras de validação:
 
-### `yarn build`
+NOME DE USUÁRIO: deve conter ao menos 3 caracteres, incluindo espaços e caracteres especiais;
+EMAIL: deve conter um @;
+SENHA: deve conter ao menos 3 caracteres, incluindo espaços e caracteres especiais.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Feed
+Exibirá todos os posts da API em ordem aleatória. Como tal página está protegida, ela apenas será acessível caso o usuário esteja logado; em caso contrário, ele será automaticamente conduzido à página de login.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+POSTAR: permitirá ao usuário criar um post por meio do preenchimento dois campos, um de título e um de texto. Ambos devem ser obrigatoriamente preenchidos. A criação do post será feita ao clicar na tecla Enter ou no botão POSTAR.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+COMENTÁRIOS: exibirá a quantidade total de comentários daquele post. Caso clicado, tal campo direcionará o usuário à página de detalhes do referido post.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+Algumas das ferramentas utilizadas foram:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ESTADO GLOBAL NÃO FOI UTILIZADO.
+REACT ROUTER: a navegação entre páginas utilizou as tags BrowserRouter, Switch e Route, bem como os hooks useHistory e useParams, próprios do React Router.
+COMPONENTES FUNCIONAIS: não foram usados componentes de classe, visando ao melhor desempenho do código;
+HOOKS: os hooks useState e useEffect foram utilizados;
+ESTILIZAÇÃO: a estilização foi realizada por meio do Design System MATERIAL UI e do styled-components. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+O QUE FUNCIONA
 
-### Code Splitting
+Todas as funcionalidades supracitadas estão funcionando.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+O QUE NÃO FUNCIONA
+A funcionalidade de curtir e descurtir possui um bug. Caso o usuário clique duas vezes rapidamente no botão de curtir, a quantidade de curtidas irá aumentar em duas unidades em vez de uma, o que também ocorre no botão de descurtir. Caso o botão de curtir já esteja selecionado e o de descurtir for clicado duas vezes rapidamente, a quantidade de curtidas será reduzida em quatro unidades e vice-versa.
+Para entrada no posto poderá clicar duas vezes.
+O botão de login só atualiza com o refresh da página.
