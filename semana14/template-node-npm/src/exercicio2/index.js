@@ -17,4 +17,5 @@ switch(operation){
         break
     default:
         console.log("Verifique os inputs")
+        
 }

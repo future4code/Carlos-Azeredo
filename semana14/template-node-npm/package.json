@@ -1,0 +1,20 @@
+{
+  "name": "template-node-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "clear && node ./index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react":"^17.0.2",
+    "react-dom":"^17.0.2",
+    "react-scripts":"4.0.3",
+    "web-vitals":"^1.0.1"
+    },
+  
+  "author": "Carlos Dutra",
+  "license": "ISC"
+}
