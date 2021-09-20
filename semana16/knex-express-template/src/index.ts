@@ -4,8 +4,10 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { AddressInfo } from "net";
 import createUser from "./endpoints/createUser";
-import getUserById from "./endpoints/getuserById";
+import getUserById from "./endpoints/getUserById";
 import editUser from "./endpoints/editUser";
+import createTask from "./endpoints/createTask";
+import getTaskbyId from "./endpoints/getTaskById";
 
 dotenv.config();
 
@@ -27,6 +29,9 @@ app.use(express.json());
 app.put('/user', createUser)
 app.get('/user/:id', getUserById)
 app.post('/user/edit/:id', editUser)
+app.put('/task', createTask)
+
+app.get('/task/:id', getTaskbyId)
 
 app.use(cors());
 
