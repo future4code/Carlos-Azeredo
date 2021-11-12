@@ -1,6 +1,6 @@
-#  Brain-Loterias
+`#  Brain-Loterias
 Link do Surge: <a href="https://carlos-loterias.surge.sh/"> Brain-Loterias </a>
-<h1 align = "center" id = "top"> : rocket : == Brain-Loterias == : rocket : </h1>
+<h1 align = "center" id = "top"> == Brain-Loterias ==  </h1>
 
 <p align = "center">
   <a href="#sobre"> Sobre </a> & # xa0; | & # xa0; 
@@ -11,9 +11,9 @@ Link do Surge: <a href="https://carlos-loterias.surge.sh/"> Brain-Loterias </a>
   <a href="#desenvolvedores"> Desenvolvedores </a>
 </p>
 
-<h2 id = "sobre"> : notebook : Sobre </h2>
+<h2 id = "sobre">  Sobre </h2>
 
-<p align = "center"> : rocket : Projeto desenvolvido conforme proposta do bootcamp ministrado pela Labenu para criação de um App de verificação de numeros de loterias </p>
+<p align = "center">  Projeto desenvolvido conforme proposta do bootcamp ministrado pela Labenu para criação de um App de verificação de numeros de loterias </p>
 
 <h2 id = "tecnologias"> 🛠 Tecnologias </h2>
 
@@ -24,7 +24,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 * API
 * Componentes estilizados
 
-<h2 id = "funciona"> : heavy_check_mark : O que funciona </h2>
+<h2 id = "funciona"> O que funciona </h2>
 
 * Selecionar Loteria;
 * Mostrar detalhes da loteria;
@@ -51,7 +51,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <table> 
 <tr>
  
- <td align="center"><a href="https://github.com/Carlos-Dutra-Azeredo"><img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/35279793?v=4" width="100px" alt=""/>
+ <td align="center"><a href="https://github.com/Carlos-Dutra-Azeredo"><img style="border-radius: 50%" width="100px" alt=""/>
  <br />
  <sub><b>Carlos Dutra</b></sub></a> <a href="https://github.com/Carlos-Dutra-Azeredo">🚀</a></td>
  
@@ -59,4 +59,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
   
 </table>
 👋🏽 Entre em contato!
-<a href="#top">Voltar para o topo</a>
+<a href="#top">Voltar para o topo</a>'`
