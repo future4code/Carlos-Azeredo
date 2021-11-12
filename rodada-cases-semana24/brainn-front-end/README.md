@@ -1,15 +1,6 @@
-`#  Brain-Loterias
-Link do Surge: <a href="https://carlos-loterias.surge.sh/"> Brain-Loterias </a>
+
 <h1 align = "center" id = "top"> == Brain-Loterias ==  </h1>
 
-<p align = "center">
-  <a href="#sobre"> Sobre </a> & # xa0; | & # xa0; 
-  <a href="#funciona"> O que funciona </a> & # xa0; | & # xa0;
-  <! - <a href = "# nao-funciona"> O que não funciona </a> & # xa0; | & # xa0; ->
-  <a href="#pendente"> Pendências </a> & # xa0; | & # xa0;
-  <a href="#observacoes"> Observações </a> & # xa0; | & # xa0;
-  <a href="#desenvolvedores"> Desenvolvedores </a>
-</p>
 
 <h2 id = "sobre">  Sobre </h2>
 
