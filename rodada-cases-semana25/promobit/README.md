@@ -30,4 +30,9 @@ Clone esse repositório. Instale as dependências (npm install) e rode o comando
 
 ## Imagens
 
+![image](https://user-images.githubusercontent.com/81594451/141816258-50d3dfe6-1df2-4561-a790-982d39e0cb31.png)
+![image](https://user-images.githubusercontent.com/81594451/141816488-f20d9c2b-8b04-4817-9f22-539e4261e425.png)
+![image](https://user-images.githubusercontent.com/81594451/141816575-f337a99b-b67b-4733-9bb4-68c9229580fa.png)
+
+
 
