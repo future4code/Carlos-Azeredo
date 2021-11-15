@@ -41,8 +41,8 @@ Projeto desenvolvido como estudo do Bootcamp LABENU
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/peustef">
-    <img src="https://avatars.githubusercontent.com/u/81594451?s=40&v=4" width="100px" alt="Imagem do perfil de Carlos Dutra"/>
+    <td align="center"><a href="https://github.com/Carlos-Dutra-Azeredo">
+    <img src="https://avatars.githubusercontent.com/u/81594451?v=4" width="100px" alt="Imagem do perfil de Carlos Dutra"/>
     <br />
     <sub><b>Carlos Alberto Dutra Azeredo</b></sub>
 
