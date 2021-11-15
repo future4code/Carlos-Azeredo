@@ -14,10 +14,18 @@ Projeto desenvolvido como estudo do Bootcamp LABENU
 - styled-components
 
 ## Para acessar o site
-<a href="carlos-videos.surge.sh"></a>
+
+<a href="https://carlos-videos.surge.sh/">carlos-videos.surge.sh</a>
+
 
 ## Para rodar localmente
-Clone esse repositório. Instale as dependências (npm install) e rode o comando npm run start.
+ Clone esse repositório
+- Instale as dependências (npm install) 
+- Rode o comando npm run start
+- Crie um arquivo .env na raiz do projeto e preencha a chave a seguir com os valores apropriados:
+   ```
+   REACT_APP_API_KEY =
+   ```
 
 ## Recursos
 - Página inicial
@@ -28,6 +36,17 @@ Clone esse repositório. Instale as dependências (npm install) e rode o comando
 
 - Página de detalhes
   - Visualização de mais informações sobre o filme escolhido
+
+
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/peustef">
+    <img src="https://avatars.githubusercontent.com/u/81594451?s=40&v=4" width="100px" alt="Imagem do perfil de Carlos Dutra"/>
+    <br />
+    <sub><b>Carlos Alberto Dutra Azeredo</b></sub>
+
+</table>
 
 ## Imagens
 
