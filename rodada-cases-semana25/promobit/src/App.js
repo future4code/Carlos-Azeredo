@@ -1,6 +1,6 @@
 import React from "react";
-import GlobalState from "./global/GlobalState";
-import { Router } from "./routes/Router";
+import GlobalState from "./global/GlobalState"
+import { Router } from "./routes/Router"
 
 
 const App = () => {
@@ -10,3 +10,5 @@ const App = () => {
     </GlobalState>
   );
 }
+
+export default App

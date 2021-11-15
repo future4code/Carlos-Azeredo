@@ -1,9 +1,8 @@
 import { Text } from '@chakra-ui/react'
 import React from 'react';
 import { useHistory } from 'react-router';
-import { goToHome } from '../../route/coordinator'
+import { goToHome } from '../../routes/coordinator'
 import { Container } from '@chakra-ui/layout'
-import AppBar from '@material-ui/core/AppBar'
 
 const Header = () => {
 	const history = useHistory();
@@ -18,4 +17,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default Header

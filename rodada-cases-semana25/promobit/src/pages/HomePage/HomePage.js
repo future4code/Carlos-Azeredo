@@ -1,25 +1,21 @@
 import React, { useContext } from "react";
-import Header from "../../components/Header/Header";
 import MovieCard from "../../components/MovieCard/MovieCard";
 import GlobalStateContext from "../../global/GlobalStateContext";
+import Header from "../../components/Header/Header"
+import { CardsContainer } from "./styled";
 
 
 const HomePage = () => {
-  const { movies } = useContext(GlobalStateContext)
-
-  return (
-    <div>
-      <Header />
-      <MovieCard />
+    const { movies } = useContext(GlobalStateContext)
+  
+    return (
       <div>
-        {
-          movies.results && movies.results.map((movie) => {
-            return <p key={movie.title}>{movie.title}</p>
-          })
-        }
+        <Header />
+        <CardsContainer>
+          <MovieCard movies={movies} />
+        </CardsContainer>
       </div>
-    </div>
-  );
-}
-
-export default HomePage;
+    );
+  }
+  
+  export default HomePage;
