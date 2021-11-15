@@ -17,9 +17,9 @@ export const TextContainer = styled.div`
     text-align:start;
     width:32vw;
     margin-left:40px;
-    color:#99AABB;
+    color:black;
     h1, h3{
-        color:#FFFFFF;
+        color:black;
     }
     @media (max-width: 699px){
         text-align:start;

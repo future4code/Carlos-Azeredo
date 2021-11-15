@@ -10,7 +10,7 @@ const Header = () => {
 		
 		<Container bgColor="blackAlpha.800" maxW="120%" height="8vh">
 			<Text fontSize="8xl" color="blue.300" as="button" onClick={() => goToHome(history)}>
-				Ver Vídeos
+				Voltar
 			</Text>
 	
 		</Container>

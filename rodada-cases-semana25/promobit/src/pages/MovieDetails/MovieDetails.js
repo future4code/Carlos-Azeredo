@@ -8,6 +8,7 @@ import { LANGUAGE } from "../../constants/language";
 import { BASE_URL } from "../../constants/urls";
 import { MainContainer, TextContainer } from "./styled";
 import { goBack } from "../../routes/coordinator";
+import Header from "../../components/Header/Header";
 
 
 const MovieDetails = () => {
@@ -38,6 +39,7 @@ const MovieDetails = () => {
 
   return (
     <MainContainer>
+      <Header/>
       <BackArrow onClick={() => goBack(history)} />
       <Card key={movie && movie.title}>
         <MovieImg style={movie && movie.title && { backgroundImage: `url(https://image.tmdb.org/t/p/original${movie.poster_path})` }} />
