@@ -2,12 +2,12 @@
 
 ## Sobre
 ### Veja os filmes em alta e lançamentos 
+
 Aplicação de visualização de.  Desenvolvida em React.js
 
 Projeto desenvolvido como estudo do Bootcamp LABENU
 
 ## Libs utilizadas
-
 - axios
 - react-router-domgit status
 
