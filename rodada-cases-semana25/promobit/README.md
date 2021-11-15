@@ -13,7 +13,7 @@ Projeto desenvolvido como estudo do Bootcamp LABENU
 - styled-components
 
 ## Para acessar o site
-<a href="">peu-movie-database.surge.sh</a>
+<a href=""></a>
 
 ## Para rodar localmente
 Clone esse repositório. Instale as dependências (npm install) e rode o comando npm run start.
