@@ -1,23 +1,22 @@
-import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import HomePage from '../pages/HomePage/HomePage'
-import MoviePage from '../pages/MoviePage/MoviePage'
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import HomePage from "../pages/HomePage/HomePage";
+import MovieDetails from "../pages/MovieDetails/MovieDetails";
 
-const Router = () => {
+export const Router = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path={'/'}>
+                <Route exact path="/">
                     <HomePage />
                 </Route>
-
-                <Route exact path={'/movie/:id'}>
-                    <MoviePage />
+                <Route exact path="/movie/:id">
+                    <MovieDetails />
+                </Route>
+                <Route>
+                    <p>erro</p>
                 </Route>
             </Switch>
         </BrowserRouter>
-
     )
 }
-
-export default Router
