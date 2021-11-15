@@ -26,6 +26,7 @@ export const StyledButton = styled.button`
     box-sizing: border-box;
     margin-bottom: 16px;
     margin-right: 32px;
+    transition: all 200ms ease;
     &:hover{
         cursor: pointer;
         opacity:0.8;
