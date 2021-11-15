@@ -8,7 +8,9 @@ Aplicação de visualização de.  Desenvolvida em React.js
 Projeto desenvolvido como estudo do Bootcamp LABENU
 
 ## Libs utilizadas
+
 - axios
+
 - react-router-domgit status
 
 - styled-components
@@ -37,17 +39,6 @@ Projeto desenvolvido como estudo do Bootcamp LABENU
 - Página de detalhes
   - Visualização de mais informações sobre o filme escolhido
 
-
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/peustef">
-    <img src="https://avatars.githubusercontent.com/u/81594451?s=40&v=4" width="100px" alt="Imagem do perfil de Carlos Dutra"/>
-    <br />
-    <sub><b>Carlos Alberto Dutra Azeredo</b></sub>
-
-</table>
-
 ## Autor
 
 <table>
@@ -55,9 +46,11 @@ Projeto desenvolvido como estudo do Bootcamp LABENU
     <td align="center"><a href="https://github.com/Carlos-Dutra-Azeredo">
     <img src="https://avatars.githubusercontent.com/u/81594451?v=4" width="100px" alt="Imagem do perfil de Carlos Dutra"/>
     <br />
-    <sub><b>Carlos Dutra Azeredo</b></sub>
+    <sub><b>Carlos Alberto Dutra Azeredo</b></sub>
 
 </table>
+
+
 
 ## Imagens
 
