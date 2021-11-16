@@ -8,7 +8,7 @@ const FormContainer = styled.form`
     padding-top: 12px;
     margin: 0 auto;
         input{
-            width: 260px;
+            width: 290px;
             height: 40px;
             font-size: 20px;
         }

@@ -13,7 +13,7 @@ const MainContainer = styled.div`
             height: 25px;
             border: 2px solid black;
             font-size: 20px;
-            background-color: black;
+            background-color: white;
         }
 `
 
