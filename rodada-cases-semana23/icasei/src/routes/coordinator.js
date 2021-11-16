@@ -3,4 +3,5 @@ export const goToVideoPage = (history, name) => {
 }
 
 export const goToSearchPage = (history) => {
-    history.push("/busca")}
+    history.push("/")
+}

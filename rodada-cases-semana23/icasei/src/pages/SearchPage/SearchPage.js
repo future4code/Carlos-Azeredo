@@ -2,6 +2,7 @@ import React, { useContext } from "react"
 import CardVideo from "../../components/CardVideo/CardVideo"
 import GlobalStateContext from "../../global/GlobalStateContext"
 import { FormContainer, MainContainer, VideosContainer } from "./styled"
+import { MdSearch } from "react-icons/md"
 
 const SearchPage = () => {
     const { getVideoName, keyword, setKeyword, videoName } = useContext(GlobalStateContext)
@@ -19,11 +20,11 @@ const SearchPage = () => {
             <FormContainer onSubmit={onSubmitForm}>
                     <input
                         type="text"
-                        placeholder="Pesquisar"
+                        placeholder="Pesquise seu vídeo"
                         value={keyword}
                         onChange={handleChange}
                     />
-                    <button onClick={() => getVideoName()}>Request</button>
+                    <button onClick={() => getVideoName()}><MdSearch /></button>
             </FormContainer>
             <VideosContainer>      
             {videoName.map((videoList) => {

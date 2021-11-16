@@ -5,7 +5,20 @@ const MainContainer = styled.div`
     flex-direction: column;
 `
 const FormContainer = styled.form`
+    padding-top: 12px;
     margin: 0 auto;
+        input{
+            width: 260px;
+            height: 40px;
+            font-size: 20px;
+        }
+        button{
+            border: none;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            font-size: 20px;
+        }
 `
 
 const VideosContainer = styled.div`
@@ -16,7 +29,6 @@ const VideosContainer = styled.div`
     max-width: 100%;
     width: 1080px;
     margin: 0 auto;
-    border: 2px solid blue;
 `
 export {
     MainContainer,
