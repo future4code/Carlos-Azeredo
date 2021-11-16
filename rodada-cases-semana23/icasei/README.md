@@ -16,7 +16,7 @@ Projeto desenvolvido como estudo do Bootcamp LABENU
 - styled-components
 
 ## Para acessar o site
-<a href="https://.surge.sh/">database.surge.sh</a>
+<a href="https://buscador-icasei-carlos.surge.sh/">buscador-icasei-carlos.surge.sh</a>
 
 ## Para rodar localmente
 Clone esse repositório. Instale as dependências (npm install) e rode o comando npm run start.
@@ -41,3 +41,7 @@ Clone esse repositório. Instale as dependências (npm install) e rode o comando
 </table>
 
 ## Imagens
+      
+      
+![image](https://user-images.githubusercontent.com/81594451/141913414-f3ce954f-dd70-470a-9792-be315d925d05.png)
+![image](https://user-images.githubusercontent.com/81594451/141914087-69a3211e-2eb1-4539-8db3-1ad151c748a0.png)
